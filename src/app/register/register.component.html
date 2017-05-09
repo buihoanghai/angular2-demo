@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<div>
+    <h2>Register</h2>
+    <form name="form" novalidate #f="ngForm" (ngSubmit)="f.form.valid && register()">
+        <div>
+            <label for="firstName">firstName</label>
+            <input name="firstName" type="text" required #firstName="ngModel" [(ngModel)]="model.firstName">
+            <div *ngIf="f.submitted && !firstName.valid">firstName is required</div>
+        </div>
+        <div>
+            <label for="lastName">lastName</label>
+            <input name="lastName" type="text" required #lastName="ngModel" [(ngModel)]="model.lastName">
+            <div *ngIf="f.submitted && !lastName.valid">lastName is required</div>
+        </div>
+        <div>
+            <label for="username">username</label>
+            <input name="username" type="text" required #username="ngModel" [(ngModel)]="model.username">
+            <div *ngIf="f.submitted && !username.valid">username is required</div>
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input name="password" type="password" required #password="ngModel" [(ngModel)]="model.password">
+            <div *ngIf="f.submitted && !password.valid">password is required</div>
+        </div>
+        <div>
+            <button [disabled]="loading">Register</button>
+            <a [routerLink]="['/login']">Cancel</a>
+        </div>
+    </form>
+
+</div>
+
+</html>
