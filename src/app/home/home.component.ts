@@ -12,18 +12,17 @@ import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import {AlertService} from "../services/alert.service";
 
-import { CarouselConfig } from 'ngx-bootstrap/carousel';
-import "./carousel.scss";
 @Component({ 
     selector: 'my-home', 
     templateUrl: './home.component.html',
-     providers: [{provide: CarouselConfig, useValue: {interval: 6500, noPause: true}}]
 }) 
 
 export class HomeComponent implements OnInit {
     currentUser: User;
+    count: number = 0;
     users: User[] = [];
     carousels: any;
+
 
     constructor(private userService: UserService,
                 private carouselService: CarouselService,
@@ -31,13 +30,13 @@ export class HomeComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        this.count=10;
         this.currentUser = JSON.parse(window.localStorage.getItem('currentUser'));
         this.userService.getAll().subscribe(users => {
             this.users = users
         });
         this.carouselService.getCarousel().subscribe(
             carousels => {
-
                 this.carousels = carousels;
                 console.log('log ne');
                 console.log(this.carousels);

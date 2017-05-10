@@ -1,21 +1,6 @@
 <div>
-    <h1>Hi {{currentUser.username}}</h1>
-    <h3>All registered users:</h3>
-    <li *ngFor="let user of users">
-        {{user.fisrtName}} {{user.lastName}}
-    </li>
-    <a [routerLink]="['/login']">Logout</a>
-</div>
-<div>
     <h1>Carousel</h1>
-           <div *ngFor="let carousel of carousels">
-        {{carousel.ruleName}}
-              <carousel  [noWrap]="true">
-            <slide *ngFor="let recommendation of carousel.recommendations" >
-                <img [src]="recommendation.logoURL" class="img-responsive center-block">
-            </slide>
-        </carousel>
-      
+    <div *ngFor="let carousel of carousels">
+        <carousel [carousel]="carousel"></carousel>
     </div>
- 
 </div>

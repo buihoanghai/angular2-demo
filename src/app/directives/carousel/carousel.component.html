@@ -1,0 +1,33 @@
+<div class="carousel-list">
+	<h2 class="header-block">{{carousel.ruleName}}</h2>
+	<div id="{{ID}}">
+		<div *ngFor="let recommendation of carousel.recommendations" >
+			<div>
+				<img [src]="recommendation.logoURL" class="img-responsive center-block"/>
+				<h4 class="title-movie">{{recommendation.title}}</h4>
+			</div>
+			<div class="pic-caption">
+				<h3 class="title-movie">{{recommendation.title}}</h3>
+				<div class="rating" >
+					<div class="rating-range">
+						<div class="rating-selected" 
+						[style.width.px]="(recommendation.starRating|| 0)*16">
+							
+						</div>
+
+					</div>
+				</div>
+				<p><span>{{recommendation.releaseDate}}</span></p>
+				<p><span>{{recommendation.duration}} min</span></p>
+				<!---->
+				<div class="btn-bottom-item">
+					<div class="record">
+						<i class="glyphicon glyphicon-plus"></i> Add List
+					</div>
+					<div class="trailer">
+					<i class="glyphicon glyphicon-expand"></i> Trailer</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

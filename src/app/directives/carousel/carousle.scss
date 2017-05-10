@@ -1,0 +1,96 @@
+//Vars
+$assetPath : "../../../assets/";
+
+.carousel-list{
+	.slick-slide{
+		position:relative;
+		overflow: hidden;
+		cursor: pointer;
+		img{
+			transition: all .5s ease 0s;
+			    width: 100%;
+			    padding:4px;
+		}
+		&:hover{
+			img{
+				transform: scale(1.5);
+    			z-index: 300;
+			}
+			.pic-caption{
+				opacity: 1;
+				transform: rotateY(0deg);
+			}
+		}
+	}
+	.rating{
+		.rating-range{
+				width: 160px;
+				height: 16px;
+			    position: relative;
+			    display: inline-block;
+			    background: url(#{$assetPath}/img/stars.png);
+		}
+		.rating-selected{
+			height: 16px;
+			display: block;
+			background-position: left -16px;
+			background-image: url(#{$assetPath}/img/stars.png);
+		}
+	}
+	.title-movie{
+		padding: 0 10px;
+	    text-transform: capitalize;
+	    color: #9d9d9d;
+	    text-align: center;
+	}
+	.pic-caption {
+	    background: rgba(0,0,0,.85) none repeat scroll 0 0;
+	    color: #fff;
+	    height: 100%;
+	    opacity: 0;
+	    padding: 20px 15px;
+	    position: absolute;
+	    text-align: left;
+	    transition: all .5s ease 0s;
+	    width: 100%;
+	    z-index: 2;
+	    top: 0;
+	    transform: rotateY(180deg);
+	}
+	.header-block{
+	    text-transform: uppercase;
+	    color: #f48331;
+	    font-size: 20px;
+	    font-weight: 600;
+	}
+	.btn-bottom-item{
+		i{
+			font-size:14px;
+		}
+		.record{
+			position: absolute;
+		    bottom: 0;
+		    width: 50%;
+		    left: 0;
+		    height: 42px;
+		    padding: 10px;
+		    background-color: #f48331;
+		    font-size: 14px;
+		    cursor: pointer;
+		    text-align: center;
+		}
+		.trailer {
+		    position: absolute;
+		    bottom: 0;
+		    width: 50%;
+		    right: 0;
+		    height: 42px;
+		    padding: 10px;
+		    background-color: #f48331;
+		    font-size: 14px;
+		    border-left: 1px solid #fff;
+		    cursor: pointer;
+		    text-align: center;
+		}
+	}
+}

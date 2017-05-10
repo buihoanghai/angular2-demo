@@ -2,7 +2,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
 // used to create fake backend
 import { fakeBackendProvider } from './helpers/index';
 import { MockBackend, MockConnection } from '@angular/http/testing';
@@ -17,9 +16,8 @@ import {UserService} from "./services/user.service";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
 import {AuthGuard} from "./guards/auth.guard";
-import {AlertComponent} from "./directives/alert.component";
+import {AlertComponent, CarouselComponent,HeaderComponent} from "./directives/index";
 import {CarouselService} from "./services/carousel.service";
-import {CarouselModule} from "ngx-bootstrap";
 
 
 @NgModule({
@@ -27,8 +25,7 @@ import {CarouselModule} from "ngx-bootstrap";
         BrowserModule,
         FormsModule,
         HttpModule,
-        CarouselModule.forRoot(),
-        routing
+        routing,
     ],
     declarations: [
         AppComponent,
@@ -36,6 +33,8 @@ import {CarouselModule} from "ngx-bootstrap";
         LoginComponent,
         RegisterComponent,
         AlertComponent,
+        CarouselComponent,
+        HeaderComponent
     ],
     providers: [
         AlertService,
