@@ -1,0 +1,17 @@
+<div class="demo">
+	<h2>DEMO</h2>
+    <form name="form" >
+        <div class="form-group">
+            <label for="arr">Input Array</label>
+             <input class="form-control" name="arr" type="text" [(ngModel)]="model.arr">
+
+
+            <button class="btn btn-defaults" (click)="findFirstDuplicated()" >findFirstDuplicated</button>
+            <div>First Duplicated: {{firstDuplicated}} </div>
+            <button class="btn btn-defaults" (click)="findClosestNumber()">findClosestNumber</button>
+            <div>Closest Number: {{closestNumber}} </div>
+
+        </div >
+       
+    </form>
+</div>

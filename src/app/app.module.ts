@@ -10,15 +10,13 @@ import { BaseRequestOptions } from '@angular/http';
 import { AppComponent }  from './app.component';
 import { routing }        from './app.routing';
 import {HomeComponent} from "./home/home.component";
-import {AlertService} from "./services/alert.service";
-import {AuthenticationService} from "./services/authentication.service";
-import {UserService} from "./services/user.service";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
+import { DemoComponent }  from './demo/demo.component';
 import {AuthGuard} from "./guards/auth.guard";
-import {AlertComponent, CarouselComponent,HeaderComponent} from "./directives/index";
-import {CarouselService} from "./services/carousel.service";
 
+import {AlertService ,AuthenticationService,UserService,CarouselService, DemoService} from "./services/index";
+import {AlertComponent, CarouselComponent,HeaderComponent,ImgLoad} from "./common/index";
 
 @NgModule({
     imports: [
@@ -32,9 +30,11 @@ import {CarouselService} from "./services/carousel.service";
         HomeComponent,
         LoginComponent,
         RegisterComponent,
+        DemoComponent,
         AlertComponent,
         CarouselComponent,
-        HeaderComponent
+        HeaderComponent,
+        ImgLoad
     ],
     providers: [
         AlertService,
@@ -42,7 +42,7 @@ import {CarouselService} from "./services/carousel.service";
         UserService,
         AuthGuard,
         CarouselService,
-
+        DemoService,
         // providers used to create fake backend
         fakeBackendProvider,
         MockBackend,

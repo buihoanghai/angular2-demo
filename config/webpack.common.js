@@ -23,7 +23,8 @@ module.exports = {
                     loader: 'awesome-typescript-loader',
                     options: { configFileName: helpers.root('src', 'tsconfig.json') }
                 }, 'angular2-template-loader'
-              ]
+              ],
+               exclude: [/\.(spec|e2e)\.ts$/]
           },
           {
               test: /\.html$/,

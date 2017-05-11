@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {User} from "../../models/User";
+import {User} from "../../../models/User";
 import "./header.component.scss";
 
 @Component({

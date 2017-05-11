@@ -1,26 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<div class="col-md-6 col-md-offset-3">
-    <h2>Login</h2>
-    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
-        <div>
-            <label for="username">username</label>
-            <input name="username" type="text" required #username="ngModel"
+<div class="login-form">
+    <form name="form"  (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <div class="form-group">
+            <label for="username">User Name</label>
+            <input class="form-control" name="username" type="text" required #username="ngModel"
                    [(ngModel)]="model.username">
             <div *ngIf="f.submitted && !username.valid">password is required</div>
         </div>
-        <div>
-            <label for="password">password</label>
-            <input name="password" type="password" required #password="ngModel"
+        <div  class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" name="password" type="password" required #password="ngModel"
                    [(ngModel)]="model.password">
             <div *ngIf="f.submitted && !password.valid">password is required</div>
         </div>
         <div>
-            <button [disabled]="loading">Login</button>
+            <button class="btn btn-default" [disabled]="loading">Login</button>
             <a [routerLink]="['/register']">Register</a>
         </div>
     </form>
 </div>
-
-</html>

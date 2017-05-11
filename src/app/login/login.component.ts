@@ -6,6 +6,7 @@ import {Component, OnInit} from "@angular/core";
 import {ActivatedRoute, Router} from "@angular/router";
 import {AuthenticationService} from "../services/authentication.service";
 import {AlertService} from "../services/alert.service";
+import "./login.component.scss";
 @Component({
     selector: 'my-login',
     templateUrl: 'login.component.html',
