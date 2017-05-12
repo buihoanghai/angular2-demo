@@ -11,7 +11,7 @@ import {DemoService} from "../services/demo.service";
 }) 
 
 export class DemoComponent {
-    model: any ={arr:"[1, 5, 3, 8, 12, 3, 18, 4, 1, 30]"};
+    model: any ={arr:"[4, 5, 6, 8, 12, 5, 18, 3, -2, 30]"};
     demo: DemoService;
     closestNumber : number =0;
     firstDuplicated : number =0;
@@ -29,6 +29,6 @@ export class DemoComponent {
     }
      findClosestNumber() {
      	let arr=JSON.parse(this.model.arr);
-     	this.closestNumber=this.demo.findClosestNumber(arr , 0);
+     	this.closestNumber=this.demo.findClosestNumber(arr);
     }
 }

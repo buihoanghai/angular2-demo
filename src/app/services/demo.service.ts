@@ -1,30 +1,33 @@
 export class DemoService {
-	 private FIRST_INDEX = 0;
     constructor() {
     }
-    findClosestNumber(numbers: number[], losestNumber: number): number {
-        let diff=[];
-
-        for (let indexLoop of numbers) {
-            let diffTemp = Math.abs(numbers[indexLoop]) - Math.abs(losestNumber);
-            diff.push(diffTemp);
+    findClosestNumber(numbers: number[]): number {
+        var closestVal=9999999;
+        var temp;
+        for (let i of numbers) {
+            if(closestVal>Math.abs(numbers[i])){
+                closestVal=Math.abs(numbers[i]);
+                temp=numbers[i];
+            }
         }
-
-        diff.sort(function(a, b){return a-b});
-
-        return diff[this.FIRST_INDEX];
+        return temp;
     }
     findFirstDuplicated(numbers: number[]){
     	var duplicatedNumber=0;
-        for (let indexLoop in numbers) {
-            for (let indexLoop2 in numbers) {
-                if(indexLoop !== indexLoop2){
-                    if(numbers[indexLoop]==numbers[indexLoop2]){
-                        duplicatedNumber= numbers[indexLoop];
+        var flag=false;
+        var browseNumbers:number[]=[];
+        for (let i in numbers) {
+            for (let j in browseNumbers) {
+                    if(numbers[i]===browseNumbers[j]){
+                        duplicatedNumber= numbers[i];
+                        flag=true;
                         break;
                     }
-                }
             }
+            if(flag){
+                break;
+            }
+            browseNumbers.push(numbers[i]);
         }
         return duplicatedNumber;
     }
