@@ -13,10 +13,11 @@ import {HomeComponent} from "./home/home.component";
 import {LoginComponent} from "./login/login.component";
 import {RegisterComponent} from "./register/register.component";
 import { DemoComponent }  from './demo/demo.component';
+import { WatchComponent }  from './watch/watch.component';
 import {AuthGuard} from "./guards/auth.guard";
 
 import {AlertService ,AuthenticationService,UserService,CarouselService, DemoService} from "./services/index";
-import {AlertComponent, CarouselComponent,HeaderComponent,ImgLoad} from "./common/index";
+import {AlertComponent, CarouselComponent, CarouselBannerComponent,HeaderComponent,ImgLoad} from "./common/index";
 
 @NgModule({
     imports: [
@@ -31,8 +32,10 @@ import {AlertComponent, CarouselComponent,HeaderComponent,ImgLoad} from "./commo
         LoginComponent,
         RegisterComponent,
         DemoComponent,
+        WatchComponent,
         AlertComponent,
         CarouselComponent,
+        CarouselBannerComponent,
         HeaderComponent,
         ImgLoad
     ],

@@ -38,12 +38,10 @@ export class HomeComponent implements OnInit {
         this.carouselService.getCarousel().subscribe(
             carousels => {
                 this.carousels = carousels;
-                console.log('log ne');
-                console.log(this.carousels);
             },
             error => {
                 this.alertService.error(error);
-            });
+        });
     }
 
 

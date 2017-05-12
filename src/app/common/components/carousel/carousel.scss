@@ -97,4 +97,21 @@ $assetPath : "../../../../assets/";
 		    text-align: center;
 		}
 	}
+	.btn-trailer{
+		position: absolute;
+	    left: calc(50% - 30px);
+	    color: #fff;
+	    text-align: center;
+	    argin-top: 5px;
+	    text-transform: uppercase;
+	    text-decoration: none;
+
+	    i{
+	    	color: #f48331;
+		    font-size: 60px;
+		    border: 2px solid #999;
+		    border-radius: 50%;
+		    margin-bottom: 8px;
+	    }
+	}
 }

@@ -22,6 +22,9 @@
 				<p><span>{{recommendation.releaseDate}}</span></p>
 				<p><span>{{recommendation.duration}} min</span></p>
 				<!---->
+				<a class="btn-trailer" [routerLink]="['/watch',recommendation.contentId]">
+					<i class="glyphicon glyphicon-play-circle"></i> <br>Watch
+              	</a>
 				<div class="btn-bottom-item">
 					<div class="record">
 						<i class="glyphicon glyphicon-plus"></i> Add List

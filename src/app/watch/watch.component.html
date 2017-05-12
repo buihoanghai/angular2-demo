@@ -1,0 +1,13 @@
+<div class="watch" *ngIf="carousel && video">
+     <video data-dashjs-player autoplay src="http://dash.edgesuite.net/envivio/EnvivioDash3/manifest.mpd" controls>
+</video>
+    <div class="detail-watch">
+        <p class="light-paragraph"><strong>Director</strong>: {{video.director}}</p>
+        <div class="content-information">
+            <h3 class="title">{{video.title}}</h3>
+            <p class="light-paragraph"><strong>Description</strong>: {{video.description}}
+            </p>
+        </div>
+    </div>
+     <carousel [carousel]="carousel"></carousel>
+</div>

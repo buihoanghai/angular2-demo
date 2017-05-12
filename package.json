@@ -45,6 +45,7 @@
     "karma-sinon": "^1.0.5",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-typescript-preprocessor2": "^1.2.1",
+    "karma-verbose-reporter": "0.0.6",
     "karma-webpack": "^2.0.3",
     "mocha": "^3.3.0",
     "ngx-bootstrap": "1.6.6",

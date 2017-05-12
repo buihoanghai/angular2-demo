@@ -16,11 +16,11 @@ module.exports = function (config) {
       module: webpackConfig.module,
       resolve: webpackConfig.resolve
     },
-    reporters: ['progress'],
+    reporters: ['verbose'],
     browsers: ['PhantomJS'],
     port: 9876,
     colors: true,
-    logLevel: config.LOG_INFO,
+    logLevel: config.LOG_DEBUG,
     autoWatch: true,
     singleRun: false,
     concurrency: Infinity

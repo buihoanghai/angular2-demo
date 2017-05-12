@@ -12,7 +12,7 @@ export class ImgLoad {
 
     ngOnInit() {
     	let element=this.element.nativeElement;
-    	const IMAGE_NOT_FOUND = require('../../../../assets/img/image-not-found.jpg');
+    	const IMAGE_NOT_FOUND = require('../../../../assets/img/image-not-found.png');
     	const IMAGE_LOADING = require('../../../../assets/img/loading.gif'); 
 	  	console.log(element);
         element.src = IMAGE_LOADING;
