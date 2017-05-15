@@ -17,6 +17,7 @@ import {Carousel} from "../models/Carousel";
 export class WatchComponent {
     video:Recommendation;
     carousel: Carousel;
+    player: any;
     constructor(
         private carouselService: CarouselService, 
         private route: ActivatedRoute,
@@ -32,6 +33,7 @@ export class WatchComponent {
     }
     loadVideo(contentId:string){
         let vm=this;
+        var dashjs=window['dashjs'];
         vm.carouselService.getCarousel().subscribe(
             carousels => {
                 carousels.map(carousel => {
@@ -39,6 +41,16 @@ export class WatchComponent {
                         if(video.contentId== contentId){
                             vm.carousel=carousel;
                             vm.video=video;
+                            var url = video.webPlayURL;
+                            setTimeout(function(){
+                                if(!this.player || this.player.getSource()===""){
+                                    this.player = dashjs.MediaPlayer().create();
+                                    var element=document.querySelector("#videoPlayer");
+                                    this.player.initialize(element, url, true);
+                                }else{
+                                    this.player.attachSource(url);
+                                }
+                            },1000);
                         }
                     });
                 });
