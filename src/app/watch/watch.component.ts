@@ -3,7 +3,6 @@
  */
 
 import {Component, OnInit} from "@angular/core";
-import "./watch.component.scss";
 import {CarouselService} from "../services/carousel.service";
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import 'rxjs/add/operator/switchMap';
@@ -44,6 +43,7 @@ export class WatchComponent {
                             var url = video.webPlayURL;
                             setTimeout(function(){
                                 if(!this.player || this.player.getSource()===""){
+                                    //Init dash Player
                                     this.player = dashjs.MediaPlayer().create();
                                     var element=document.querySelector("#videoPlayer");
                                     this.player.initialize(element, url, true);

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import "./footer.component.scss";
-
+import {UserService} from "../../../services/user.service";
 @Component({
     moduleId: module.id.toString(),
     selector: 'footer-layout',
@@ -8,10 +7,12 @@ import "./footer.component.scss";
 })
 
 export class FooterComponent {
-    constructor() {
+ 	userData:any;
+    constructor(private userService:UserService) {
 
     }
 
     ngOnInit() {
+    	this.userData = this.userService.getData();
     }
 }

@@ -1,4 +1,5 @@
-<div class="login-form">
+<div id="login">
+    <div class="login-form">
     <form name="form"  (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
         <div class="form-group">
             <label for="username">User Name</label>
@@ -17,4 +18,6 @@
             <a [routerLink]="['/register']">Register</a>
         </div>
     </form>
+</div>
+
 </div>

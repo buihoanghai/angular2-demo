@@ -1,6 +1,7 @@
 //Vars
-$assetPath : "../../../../assets/";
-
+$assetPath : "../assets/";
+$name-movie-color : #f48331;
+$title-movie-color : #9d9d9d;
 .carousel-list{
 	.slick-slide{
 		position:relative;
@@ -40,11 +41,11 @@ $assetPath : "../../../../assets/";
 	.title-movie{
 		padding: 0 10px;
 	    text-transform: capitalize;
-	    color: #9d9d9d;
+	    color: $title-movie-color;
 	}
 	.name-movie{
 	    text-transform: uppercase;
-	    color: #f48331;
+	    color: $name-movie-color;
 	    font-weight: 600;
 	}
 	.pic-caption {
@@ -63,7 +64,7 @@ $assetPath : "../../../../assets/";
 	}
 	.header-block{
 	    text-transform: uppercase;
-	    color: #f48331;
+	    color: $name-movie-color;
 	    font-size: 20px;
 	    font-weight: 600;
 	}
@@ -78,7 +79,7 @@ $assetPath : "../../../../assets/";
 		    left: 0;
 		    height: 42px;
 		    padding: 10px;
-		    background-color: #f48331;
+		    background-color: $name-movie-color;
 		    font-size: 14px;
 		    cursor: pointer;
 		    text-align: center;
@@ -90,7 +91,7 @@ $assetPath : "../../../../assets/";
 		    right: 0;
 		    height: 42px;
 		    padding: 10px;
-		    background-color: #f48331;
+		    background-color: $name-movie-color;
 		    font-size: 14px;
 		    border-left: 1px solid #fff;
 		    cursor: pointer;
@@ -107,7 +108,7 @@ $assetPath : "../../../../assets/";
 	    text-decoration: none;
 
 	    i{
-	    	color: #f48331;
+	    	color: $name-movie-color;
 		    font-size: 60px;
 		    border: 2px solid #999;
 		    border-radius: 50%;

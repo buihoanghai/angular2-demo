@@ -1,6 +1,6 @@
 ﻿import { Component } from '@angular/core';
-import '../assets/app.css';
 import '../assets/slick.css';
+import '../scss/main.scss';
 @Component({
     moduleId: module.id.toString(),
     selector: 'app',

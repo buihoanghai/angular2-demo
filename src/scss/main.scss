@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+$body-background-color: #1c1c1c;
+$background-2-color: #67BE4B;
+$form-background-color: #fff;
+$body-font-color: #99a4ab;
+$body-border-color: #d5d5d5;
+$font-family: 'Roboto', "Georgia", serif;
+$alt-font-family: "PT Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+//common
+@import '_common/_function.scss';
+@import '_common/_a.scss';
+@import '_common/_screen.scss';
+@import '_common/_body.scss';
+@import '_common/_container.scss';
+
+//app common
+@import '../app/common/components/carousel/carousel.scss';
+@import '../app/common/components/carousel/carousel.banner.scss';
+@import '../app/common/components/header/header.component.scss';
+@import '../app/common/components/footer/footer.component.scss';
+
+//page
+@import '../app/login/login.component.scss';
+@import '../app/register/register.component.scss';
+@import '../app/watch/watch.component.scss';
+@import '../app/demo/demo.component.scss';

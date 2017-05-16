@@ -1,9 +1,7 @@
-//Vars
-$assetPath : "../../../assets/";
 
 #footer-layout{
 	padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #1c1c1c;
+    background-color: $body-background-color;
     color: #fff;
 }

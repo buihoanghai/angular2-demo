@@ -1,7 +1,19 @@
-.register-form{
-	margin: 50% 0 0 50%;
-    transform: translate(-50%, -100%);
-    background-color: wheat;
-    padding: 15px;
-    border-radius: 4px;
+$register-background-color: #67BE4B;
+$register-form-background-color: #fff;
+#register{
+	background-color: $background-2-color;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	margin: -75px;
+
+	.register-form{
+		top: 50%;
+		left: 50%;
+	    transform: translate(-50%, -50%);
+	    background-color: $form-background-color;
+	    padding: 15px;
+	    border-radius: 4px;
+	    position: absolute;
+	}
 }

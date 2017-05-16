@@ -2,7 +2,6 @@ import { Component, OnInit, Input} from '@angular/core';
 import * as $ from 'jquery';
 import 'slick-carousel/slick/slick';
 import {Carousel} from "../../../models/Carousel";
-import "./carousel.scss";
 import * as carouselConfig from "./carousel.config";
 @Component({
     moduleId: module.id.toString(),

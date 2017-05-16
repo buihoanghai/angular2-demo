@@ -26,7 +26,7 @@ export class ImgLoad {
 	          element.src =IMAGE_NOT_FOUND;
 	        };
 	        downloadingImage.src = url;
-        });
+        },2000);//setTimeout for demo waiting loading img
        
     }
 }
