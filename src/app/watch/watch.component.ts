@@ -50,7 +50,7 @@ export class WatchComponent {
                                 }else{
                                     this.player.attachSource(url);
                                 }
-                            },1000);
+                            });
                         }
                     });
                 });

@@ -2,7 +2,7 @@ const NUMBER_DISPLAY_RESPONSIVE = 8;
 const NUMBER_DISPLAY_NORMAL = 6;
 const responsive={
   infinite: true,
-  speed: 300,
+  speed: 2000,
   slidesToShow: NUMBER_DISPLAY_RESPONSIVE,
   slidesToScroll: NUMBER_DISPLAY_RESPONSIVE,
   responsive: [

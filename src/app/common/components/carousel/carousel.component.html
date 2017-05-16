@@ -3,12 +3,15 @@
 	<div id="{{ID}}">
 		<div *ngFor="let recommendation of carousel.recommendations" >
 			<div>
-				<img src=""
-				 [imgload]="recommendation.logoURL" 
-				 class="img-responsive center-block"/>
-				<h5 class="title-movie">{{recommendation.title}}</h5>
+				 <a [routerLink]="['/watch',recommendation.contentId]">
+						<img src=""
+						 [imgload]="recommendation.logoURL" 
+						 class="img-responsive center-block"/>
+								<h5 class="title-movie">{{recommendation.title}}</h5>
+              	</a>
 			</div>
 			<div class="pic-caption" *ngIf="carousel.ruleType!=='CHANNEL'">
+
 				<h6 class="name-movie">{{recommendation.title}}</h6>
 				<div class="rating" >
 					<div class="rating-range">

@@ -20,10 +20,8 @@ export class CarouselComponent {
     ngOnInit() {
         let ID = this.ID=+new Date();
         let carousel=this.carousel;
-        let config=carouselConfig.normal;
-        if(this.carousel.recommendations.length>=carouselConfig.NUMBER_DISPLAY_RESPONSIVE){
-            config=carouselConfig.responsive;
-        }
+        let config=carouselConfig.responsive;
+   
         setTimeout(function(){
 
             $('#' + ID).slick(config);

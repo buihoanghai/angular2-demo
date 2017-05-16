@@ -1,4 +1,4 @@
-<nav id="header-layout" class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<nav id="header-layout" class="navbar navbar-default navbar-fixed-top navbar-inverse" *ngIf="currentUser">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header pull-right">
@@ -7,12 +7,10 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="navbar-header" >
       <ul class="nav navbar-nav">
         <li class="active"><a  [routerLink]="['']">HOME</a></li>
-        <li class=""><a  [routerLink]="['demo']">DEMO</a></li>
       </ul>
-
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
