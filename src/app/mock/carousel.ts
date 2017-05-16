@@ -4,92 +4,6 @@ var carousel = {
   "data": {
     "carousel": [
       {
-        "ruleType": "CHANNEL",
-        "ruleName": "Channel",
-        "position": 6,
-        "recommendations": [
-          {
-            "contentId": "8264",
-            "title": "VTV 1",
-            "description": "VTV 1",
-            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//vtv1.png",
-            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv1.stream/manifest.mpd",
-            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/tv.vtv1.stream",
-            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv1.stream/playlist.m3u8",
-            "channelId": 8264,
-            "isLive": true,
-            "isUnAvail": false,
-            "streamName": "tv.vtv1"
-          },
-          {
-            "contentId": "8275",
-            "title": "VTV 2",
-            "description": "VTV 2",
-            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//vtv2.png",
-            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv2.stream/manifest.mpd",
-            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/tv.vtv2.stream",
-            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv2.stream/playlist.m3u8",
-            "channelId": 8275,
-            "isLive": true,
-            "isUnAvail": false,
-            "streamName": "tv.vtv2"
-          },
-          {
-            "contentId": "8276",
-            "title": "VTV 3",
-            "description": "VTV 3",
-            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//vtv3.png",
-            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv3.stream/manifest.mpd",
-            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/tv.vtv3.stream",
-            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv3.stream/playlist.m3u8",
-            "channelId": 8276,
-            "isLive": true,
-            "isUnAvail": false,
-            "streamName": "tv.vtv3"
-          },
-          {
-            "contentId": "8278",
-            "title": "VTV 6",
-            "description": "VTV 6",
-            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//vtv6.png",
-            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv6.stream/manifest.mpd",
-            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/tv.vtv6.stream",
-            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv6.stream/playlist.m3u8",
-            "channelId": 8278,
-            "isLive": true,
-            "isUnAvail": false,
-            "streamName": "tv.vtv6"
-          },
-          {
-            "contentId": "8280",
-            "title": "VTV 9",
-            "description": "VTV 9",
-            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//vtv9.png",
-            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv9.stream/manifest.mpd",
-            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/tv.vtv9.stream",
-            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv9.stream/playlist.m3u8",
-            "channelId": 8280,
-            "isLive": true,
-            "isUnAvail": false,
-            "streamName": "tv.vtv9"
-          },
-          {
-            "contentId": "8283",
-            "title": "Live from mobile",
-            "description": "testtest",
-            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//c_Test_channel.png",
-            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/gocoder.stream/manifest.mpd",
-            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/gocoder.stream",
-            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/gocoder.stream/playlist.m3u8",
-            "channelId": 8283,
-            "isLive": true,
-            "isUnAvail": false,
-            "streamName": "gocoder"
-          }
-        ],
-        "resultCount": 6
-      },
-      {
         "ruleType": "LAST_ACTION",
         "ruleName": "Because you Watched Dolphin Tale",
         "position": 10,
@@ -392,6 +306,92 @@ var carousel = {
           }
         ],
         "resultCount": 10
+      },
+       {
+        "ruleType": "CHANNEL",
+        "ruleName": "Channel",
+        "position": 6,
+        "recommendations": [
+          {
+            "contentId": "8264",
+            "title": "VTV 1",
+            "description": "VTV 1",
+            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//vtv1.png",
+            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv1.stream/manifest.mpd",
+            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/tv.vtv1.stream",
+            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv1.stream/playlist.m3u8",
+            "channelId": 8264,
+            "isLive": true,
+            "isUnAvail": false,
+            "streamName": "tv.vtv1"
+          },
+          {
+            "contentId": "8275",
+            "title": "VTV 2",
+            "description": "VTV 2",
+            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//vtv2.png",
+            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv2.stream/manifest.mpd",
+            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/tv.vtv2.stream",
+            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv2.stream/playlist.m3u8",
+            "channelId": 8275,
+            "isLive": true,
+            "isUnAvail": false,
+            "streamName": "tv.vtv2"
+          },
+          {
+            "contentId": "8276",
+            "title": "VTV 3",
+            "description": "VTV 3",
+            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//vtv3.png",
+            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv3.stream/manifest.mpd",
+            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/tv.vtv3.stream",
+            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv3.stream/playlist.m3u8",
+            "channelId": 8276,
+            "isLive": true,
+            "isUnAvail": false,
+            "streamName": "tv.vtv3"
+          },
+          {
+            "contentId": "8278",
+            "title": "VTV 6",
+            "description": "VTV 6",
+            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//vtv6.png",
+            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv6.stream/manifest.mpd",
+            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/tv.vtv6.stream",
+            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv6.stream/playlist.m3u8",
+            "channelId": 8278,
+            "isLive": true,
+            "isUnAvail": false,
+            "streamName": "tv.vtv6"
+          },
+          {
+            "contentId": "8280",
+            "title": "VTV 9",
+            "description": "VTV 9",
+            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//vtv9.png",
+            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv9.stream/manifest.mpd",
+            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/tv.vtv9.stream",
+            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/tv.vtv9.stream/playlist.m3u8",
+            "channelId": 8280,
+            "isLive": true,
+            "isUnAvail": false,
+            "streamName": "tv.vtv9"
+          },
+          {
+            "contentId": "8283",
+            "title": "Live from mobile",
+            "description": "testtest",
+            "logoURL": "http://cme-dambe.fsoft-hcm.net:3030//assets/channel/logo//c_Test_channel.png",
+            "webPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/gocoder.stream/manifest.mpd",
+            "androidPlayURL": "rtsp://cme-se.fsoft-hcm.net:1935/live/gocoder.stream",
+            "iOSPlayURL": "http://cme-se.fsoft-hcm.net:1935/live/gocoder.stream/playlist.m3u8",
+            "channelId": 8283,
+            "isLive": true,
+            "isUnAvail": false,
+            "streamName": "gocoder"
+          }
+        ],
+        "resultCount": 6
       },
       {
         "ruleType": "TRENDING",

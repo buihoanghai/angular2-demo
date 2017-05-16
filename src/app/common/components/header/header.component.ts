@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import {User} from "../../../models/User";
+import {UserService} from "../../../services/user.service";
 import "./header.component.scss";
 
 @Component({
@@ -10,10 +10,12 @@ import "./header.component.scss";
 })
 
 export class HeaderComponent {
- 	currentUser: User;
-    constructor() { }
+ 	userData:any;
+    constructor(private userService:UserService) {
+
+    }
 
     ngOnInit() {
-    	this.currentUser = JSON.parse(window.localStorage.getItem('currentUser'));
+    	this.userData = this.userService.getData();
     }
 }

@@ -5,8 +5,21 @@ import 'rxjs/add/operator/map'
 
 @Injectable()
 export class UserService {
-    constructor(private http: Http) { }
-
+    userData: any = {};
+    constructor(private http: Http) {
+        this.userData.currentUser = JSON.parse(window.localStorage.getItem('currentUser'));
+    }
+    getData(){
+        return this.userData;
+    }
+    setCurrentUser(currentUser:User){
+        this.userData.currentUser = currentUser;
+        localStorage.setItem('currentUser', JSON.stringify(currentUser));
+    }
+    logout(){
+        this.userData.currentUser= undefined;
+        window.localStorage.removeItem('currentUser');
+    }
     getAll() {
         return this.http.get('/api/users', this.jwt()).map((response: Response) => response.json());
     }

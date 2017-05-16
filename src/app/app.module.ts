@@ -17,7 +17,7 @@ import { WatchComponent }  from './watch/watch.component';
 import {AuthGuard} from "./guards/auth.guard";
 
 import {AlertService ,AuthenticationService,UserService,CarouselService, DemoService} from "./services/index";
-import {AlertComponent, CarouselComponent, CarouselBannerComponent,HeaderComponent,ImgLoad} from "./common/index";
+import {AlertComponent, CarouselComponent, CarouselBannerComponent,HeaderComponent,FooterComponent,ImgLoad} from "./common/index";
 
 @NgModule({
     imports: [
@@ -37,6 +37,7 @@ import {AlertComponent, CarouselComponent, CarouselBannerComponent,HeaderCompone
         CarouselComponent,
         CarouselBannerComponent,
         HeaderComponent,
+        FooterComponent,
         ImgLoad
     ],
     providers: [

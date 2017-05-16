@@ -5,12 +5,13 @@
 import { Injectable } from "@angular/core";
 import {Http, Response} from "@angular/http";
 import {Observable} from 'rxjs/Observable';
+import {UserService} from './user.service';
 import 'rxjs/add/operator/map'
 
 @Injectable()
 export class AuthenticationService {
 
-    constructor(private http: Http) {
+    constructor(private http: Http, private userService: UserService) {
     }
 
     login(username: string, password: string) {
@@ -19,13 +20,12 @@ export class AuthenticationService {
             let user = response.json();
                 if (user && user.token) {
                     // store user details and jwt token in local storage to keep user logged in between page refreshes
-                    localStorage.setItem('currentUser', JSON.stringify(user));
+                    this.userService.setCurrentUser(user);
                 }
         })
     }
 
     logout() {
-        window.localStorage.removeItem('currentUser');
-
+        this.userService.logout();
     }
 }
